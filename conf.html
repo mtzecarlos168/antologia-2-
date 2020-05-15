@@ -1,0 +1,126 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bienvenido</title>
+        <link rel="stylesheet" href="estilos2.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        
+    <header>
+        <center><h1>Informatica Conalep Gustavo Baz</h1></center>
+        <center><h2>Antologia 613</h2></center>
+        <nav>
+         <ul>
+            <li><a href="index.html"><span class="primero"><i class="material-icons">home</i></span>Inicio </a></li>
+            <li><a href="mrd.html"><span class="segundo"><i class="material-icons">import_contacts</i></span>MRDE</a>
+            <ul>
+                <li><a href="mrd2.html">¿Que son las Vlan?</a></li>
+                <li><a href="conf.html">Configuracion de una VLAN</a></li>
+                <li><a href="seguridad.html">Seguridad y Diseños de las Vlan</a></li>
+                </ul>
+             </li>
+            <li><a href="dewe.html"><span class="tercero"><i class="material-icons">warning</i></span>DEWE</a>
+              <ul>
+                <li><a href="#"></a></li>
+                
+                </ul>
+             </li>
+            <li><a href="movil.html"><span class="cuarto"><i class="material-icons">phone_iphone</i></span>DDAM</a>
+              <ul>
+                               <li><a href="multimedia.html">elementos multimedia que pueden insertar en aplicaciones móviles</a></li>
+                </ul>
+             </li>
+            <li><a href="anin.html"><span class="quinto"><i class="material-icons">add</i></span></a>
+              <ul>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                </ul>
+             </li> 
+            </ul>
+        </nav>    
+        </header>
+        <div style="right: auto">
+            <br>
+            <br>
+            <br>
+            <br>
+            <center><h3>Manejo De Redes  (MRDE-02) </h3></center>
+            <br>
+            <br>
+            
+            <hr width="100%">
+            <br>
+            <br>
+            <br>
+            <h7>Agregue una VLAN</h7>
+            <br>
+            <br>
+            <br>
+            <p6 style="center">En este tema, aprenderá a crear una VLAN estática en un switch Cisco Catalyst mediante el modo de configuración global de la VLAN. Existen dos modos diferentes para configurar las VLAN en un switch Cisco Catalyst: modo de configuración de base de datos y modo de configuración global. A pesar de que la documentación de Cisco menciona el modo de configuración de base de datos de la VLAN, se elimina a favor del modo de configuración global de la VLAN.</p6>
+<p6>El usuario configurará las VLAN con los ID en el rango normal. Recuerde que existen dos rangos de ID de la VLAN. El rango normal incluye los ID 1 a 1001 y el rango ampliado consiste de los ID 1006 a 4094. VLAN 1 y 1002 a 1005 son números de ID reservados. Cuando configura las VLAN de rango normal, los detalles de configuración se almacenan automáticamente en la memoria flash del switch en un archivo llamado vlan.dat. Debido a que el usuario configura frecuentemente otros aspectos de un switch Cisco al mismo tiempo, es una buena práctica guardar los cambios de la configuración activa en la configuración de inicio.</p6>
+            <br>
+            <br>
+            <center><img src="images/vlan1.jpg"></center>
+           <p6>La figura revisa los comandos IOS de Cisco utilizados para agregar una VLAN a un switch.</p6>
+            <br>
+            <br>
+            <center><img src="images/IMAGEN40.jpg"></center>
+            <br>
+            <br>
+            <p6>La figura muestra cómo se configura la VLAN estudiante, VLAN 20 en el switch S1. En el ejemplo de topología, la computadora del estudiante, la PC2, aún no es una VLAN, pero tiene una dirección IP de 172.17.20.22.</p6>
+                <br>
+                <br>
+             <center><img src="images/IMAGEN41.jpg"></center>
+            <br>
+            <br>
+            <p6>La figura muestra un ejemplo de uso del comando show vlan brief para mostrar los contenidos del archivo vlan.dat. En la captura de pantalla se resalta la VLAN del estudiante, VLAN 20. Los ID de VLAN predeterminada 1 y 1002 a 1005 se muestran en los resultados que aparecen en pantalla. Nota: Además de ingresar un ID simple de VLAN, el usuario puede ingresar una serie de ID de VLAN separada por comas o un rango de ID de VLAN separado por guiones, usando el comando vlan vlan-id, por ejemplo: switch(config)#vlan 100,102,105-107.</p6>
+            <br>
+            <br>
+            <h7>Asignación de un puerto de switch</h7>
+            <br>
+            <br>
+            <p6>Después de crear una VLAN, asígnele un puerto o más. Cuando asigna un puerto de switch a una VLAN en forma manual, se lo conoce como puerto de acceso estático. Un puerto de acceso estático puede pertenecer a sólo una VLAN por vez. Haga clic en el botón Sintaxis del comando en la figura para revisar los comandos IOS de Cisco para asignar un puerto de acceso estático a la VLAN.</p6>
+            <br>
+            <br>
+            <img src="images/IMAGEN42.jpg">
+            <br>
+            <br>
+            <p6>La figura revisa los comandos IOS de Cisco utilizados para agregar una VLAN a un switch.</p6>
+            <br>
+            <br>
+            <img src="images/IMAGEN40.jpg">
+            <p6>La figura muestra cómo se configura la VLAN estudiante, VLAN 20 en el switch S1. En el ejemplo de topología, la computadora del estudiante, la PC2, aún no es una VLAN, pero tiene una dirección IP de 172.17.20.22.</p6>
+            <br>
+            <br>
+            <img src="images/IMAGEN41.jpg">
+            
+  <br>
+            <br>
+            <br>
+            <br>
+            
+            <hr width="100%">         
+            <br>
+            <br>
+            <br>
+            
+            
+            
+        </div>
+      
+          
+       
+        <footer class="footer">
+            
+            <center><p1>© Derechos reservados a los Alumnos del plantel conalep Gustavo Baz</p1></center>
+            <cemter><p2>© Hernandez Reyes Marco Antonio</p2></cemter>
+                 <center><p3>© Enciso Martines Carlos Yael</p3></center>
+                 <cemter><p4>© Miranda Fuentes Amairani</p4></cemter>
+               
+            </footer>
+                   
+    </body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bienvenido</title>
+        <link rel="stylesheet" href="seguridad.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        
+    <header>
+        <center><h1>Informatica Conalep Gustavo Baz</h1></center>
+        <center><h2>Antologia 613</h2></center>
+        <nav>
+         <ul>
+            <li><a href="index.html"><span class="primero"><i class="material-icons">home</i></span>Inicio </a></li>
+            <li><a href="mrd.html"><span class="segundo"><i class="material-icons">import_contacts</i></span>MRDE</a>
+            <ul>
+                <li><a href="mrd2.html">¿Que son las Vlan?</a></li>
+                <li><a href="conf.html">Configuracion de una VLAN</a></li>
+                <li><a href="seguridad.html">Seguridad y Diseños de las Vlan</a></li>
+                </ul>
+             </li>
+            <li><a href="dewe.html"><span class="tercero"><i class="material-icons">warning</i></span>DEWE</a>
+              <ul>
+                
+                </ul>
+             </li>
+            <li><a href="movil.html"><span class="cuarto"><i class="material-icons">phone_iphone</i></span>DDAM</a>
+              <ul>
+                <li><a href="multimedia.html">elementos multimedia que pueden insertar en aplicaciones móviles</a></li>
+                </ul>
+             </li>
+            <li><a href="anin.html"><span class="quinto"><i class="material-icons">add</i></span></a>
+              <ul>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                </ul>
+             </li> 
+            </ul>
+        </nav>    
+        </header>
+        <div style="right: auto">
+            
+            
+            <br>
+            <br>
+            <br>
+            <br>
+            <center><h3>Manejo De Redes  (MRDE-02) </h3></center>
+            <br>
+            <br>
+            <hr width="100%">
+            <br>
+            <br>
+            <br>
+            <center><h7>Los switches</h7></center>
+            <br>
+            <br>
+            <br>
+            <p6 style="center">Cisco tienen una configuración de fábrica en la cual las VLAN predeterminadas se preconfiguran para admitir diversos tipos de medios y protocolos. La VLAN Ethernet predeterminada es la VLAN 1. Por seguridad, se recomienda configurar todos los puertos de todos los switches para que se asocien a VLAN distintas de la VLAN 1. Generalmente, esto se logra configurando todos los puertos sin utilizar en una VLAN de agujero negro que no se use para nada en la red. Todos los puertos utilizados se asocian a VLAN independientes de la VLAN 1 y de la VLAN de agujero negro. También se recomienda desactivar los puertos de switch sin utilizar para evitar el acceso no autorizado.</p6>
+            <br>
+            <br>
+            <p6>Una buena práctica de seguridad es separar el tráfico de administración y de datos de usuario. La VLAN de administración, que es la VLAN 1 de manera predeterminada, se debe cambiar a una VLAN diferente e independiente. Para comunicarse de manera remota con un switch Cisco con fines de administración, el switch debe tener una dirección IP configurada en la VLAN de administración. Los usuarios en otras VLAN no pueden establecer sesiones de acceso remoto al switch, a menos que se los enrute a la VLAN de administración, lo que proporciona una capa de seguridad adicional. Además, se debe configurar el switch para que solo acepte sesiones SSH cifradas para la administración remota..
+                <br>
+                <br>
+Todo el tráfico de control se envía por la VLAN 1. Por lo tanto, cuando se cambia la VLAN nativa a una opción distinta de la VLAN 1, todo el tráfico de control se etiqueta en los enlaces troncales de VLAN IEEE 802.1Q (se etiqueta con la ID de VLAN 1). Por seguridad, se recomienda cambiar la VLAN nativa a una VLAN distinta de la VLAN 1. La VLAN nativa también debe ser distinta de todas las VLAN de usuarios. Asegúrese de que la VLAN nativa para un enlace troncal 802.1Q sea la misma en ambos extremos del enlace troncal.
+                <br>
+                <br>
+                Dependiendo de la fuente consultada incluso del fabricante se pueden distinguir hasta seis tipos de redes virtuales. Sin embargo, nosotros solo nos vamos a centrar en tres: a nivel de puerto, MAC y aplicación.
+                <br>
+                <br>
+                *Puerto. También conocida como Port Switching en los menús de configuración de los routers y switches, se trata de la más extendida y utilizada. Cada puerto se asigna a una VLAN y los usuarios que estén conectados a ese puerto pertenecen a la VLAN asignada. Los usuarios dentro de una misma VLAN poseen de visibilidad los unos sobre los otros, aunque no a las redes virtuales vecinas. El único inconveniente es que no permite dinamismo a la hora de ubicar los usuarios y en el caso de que el usuario cambie de emplazamiento físicamente se debería reconfigurar la red virtual.
+
+<br>
+                <br>
+                DTP ofrece cuatro modos de puerto de switch: acceso, enlace troncal, dinámico automático y dinámico deseado. Una pauta general es inhabilitar la autonegociación. Una práctica recomendada de seguridad de puertos es no utilizar los modos de puerto de switch dinámico automático o dinámico deseado.
+                
+                <br>
+                <br>
+                *Aplicaciones: Se asignarían redes virtuales en función de la aplicación utilizada, y en este caso intervienen varios factores, como por ejemplo la hora en la que nos encontramos, la dirección MAC o la subred, permitiendo distinguir entre aplicaciones SSH, FTP, Samba o incluso SMTP.
+                <br>
+                <br>
+                Por último, el tráfico de voz tiene requisitos de QoS estrictos. Si las computadoras y los teléfonos IP de los usuarios están en la misma VLAN, cada uno intenta usar el ancho de banda disponible sin tener en cuenta al otro dispositivo. Para evitar este conflicto, es aconsejable utilizar VLAN separadas para la telefonía IP y para el tráfico de datos.
+ </p6>
+  <br>
+            <br>
+            <br>
+            <br>
+            
+            <hr width="100%">         
+            <br>
+            <br>
+            <br>
+            
+            
+            
+        </div>
+      
+          
+       
+        <footer class="footer">
+            
+            <center><p1>© Derechos reservados a los Alumnos del plantel conalep Gustavo Baz</p1></center>
+            <cemter><p2>© Hernandez Reyes Marco Antonio</p2></cemter>
+                 <center><p3>© Enciso Martines Carlos Yael</p3></center>
+                 <cemter><p4>© Miranda Fuentes Amairani</p4></cemter>
+               
+            </footer>
+                   
+    </body>
+</html>
